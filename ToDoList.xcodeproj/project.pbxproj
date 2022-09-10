@@ -14,6 +14,7 @@
 		D58779F428CCE8AA0011B733 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D58779F228CCE8AA0011B733 /* ToDoList.xcdatamodeld */; };
 		D58779F628CCE8AB0011B733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58779F528CCE8AB0011B733 /* Assets.xcassets */; };
 		D58779F928CCE8AB0011B733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58779F728CCE8AB0011B733 /* LaunchScreen.storyboard */; };
+		D5877A0128CCF3550011B733 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5877A0028CCF3550011B733 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D58779F528CCE8AB0011B733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58779F828CCE8AB0011B733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D58779FA28CCE8AB0011B733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5877A0028CCF3550011B733 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D58779F728CCE8AB0011B733 /* LaunchScreen.storyboard */,
 				D58779FA28CCE8AB0011B733 /* Info.plist */,
 				D58779F228CCE8AA0011B733 /* ToDoList.xcdatamodeld */,
+				D5877A0028CCF3550011B733 /* DetailsViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				D58779EA28CCE8AA0011B733 /* AppDelegate.swift in Sources */,
 				D58779EC28CCE8AA0011B733 /* SceneDelegate.swift in Sources */,
 				D58779F428CCE8AA0011B733 /* ToDoList.xcdatamodeld in Sources */,
+				D5877A0128CCF3550011B733 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
