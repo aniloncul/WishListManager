@@ -48,16 +48,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Kw-3E-YVM">
-                                <rect key="frame" x="39" y="136" width="336" height="233"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Example-of-a-block-model-The-different-colours-represent-different-concentration-ranges" translatesAutoresizingMaskIntoConstraints="NO" id="0Kw-3E-YVM">
+                                <rect key="frame" x="39" y="136" width="336" height="260"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgM-3I-rq3">
-                                <rect key="frame" x="179" y="404" width="196" height="34"/>
+                                <rect key="frame" x="176.5" y="431" width="198.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faC-qg-otU">
-                                <rect key="frame" x="179" y="462" width="196" height="34"/>
+                                <rect key="frame" x="176.5" y="475.5" width="198.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -73,16 +73,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-yk-FJi">
-                                <rect key="frame" x="39" y="404" width="117" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="Abr-vl-xxV"/>
-                                </constraints>
+                                <rect key="frame" x="39" y="431" width="114.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd3-nj-hsE">
-                                <rect key="frame" x="39" y="462" width="117" height="34"/>
+                                <rect key="frame" x="39" y="475.5" width="114.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -116,7 +113,9 @@
                     <navigationItem key="navigationItem" id="S5P-b7-fIw"/>
                     <connections>
                         <outlet property="imageView" destination="0Kw-3E-YVM" id="JUX-CA-srM"/>
+                        <outlet property="nameTextField" destination="NgM-3I-rq3" id="0OA-AJ-PcL"/>
                         <outlet property="priceLabel" destination="Nd3-nj-hsE" id="aWT-CK-yWE"/>
+                        <outlet property="priceTextField" destination="faC-qg-otU" id="Zsd-wk-yOL"/>
                         <outlet property="productLabel" destination="bf3-yk-FJi" id="csp-5f-fg7"/>
                     </connections>
                 </viewController>
@@ -144,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Example-of-a-block-model-The-different-colours-represent-different-concentration-ranges" width="850" height="472"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
