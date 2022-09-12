@@ -39,11 +39,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         getData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name("veriGirildi"), object: nil)
+    }
+    
     @objc func addButtonTapped () {
         performSegue(withIdentifier: "toDetailsVC",  sender: nil)
     }
     
-    func getData() {
+    @objc func getData() {
+        isimDizisi.removeAll()
+        idDizisi.removeAll()
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         

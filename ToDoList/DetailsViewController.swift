@@ -52,9 +52,9 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate &
         let alisveris = NSEntityDescription.insertNewObject(forEntityName: "Alisveris", into: context)
         
         alisveris.setValue(nameTextField.text!, forKey: "isim")
-        alisveris.setValue(priceTextField, forKey: "fiyat")
         
-        if let fiyat = Int(priceLabel.text!) {
+        
+        if let fiyat = Int(priceTextField.text!) {
             alisveris.setValue(fiyat, forKey: "fiyat")
         }
         
@@ -67,6 +67,9 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate &
         } catch {
             print("hata var")
         }
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "veriGirildi"), object: nil)
+        self.navigationController?.popViewController(animated: true)
        
     }
     
